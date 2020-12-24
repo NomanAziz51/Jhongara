@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Fragment.SearchFragment"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/jhongara" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:layout_toRightOf="@+id/menu"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/jhongara"
+            android:textSize="@dimen/_20sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinner_cities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/spinner_border"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/_5sdp"
+            android:spinnerMode="dialog"
+            app:smsp_isSearchable="true"
+
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_hint="Select City"
+            app:smsp_underlineColor="@color/white"
+            app:smsp_searchTextColor="@color/black"
+            app:smsp_searchHintColor="@color/grey_hint"
+            app:smsp_searchHeaderText="Select City"
+            app:smsp_searchHeaderBackgroundColor="@color/jhongara"
+            app:smsp_hintColor="@color/grey_hint"
+            app:smsp_itemColor="@color/black"
+            app:smsp_itemListColor="@color/black"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#808080"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252"
+            />
+
+
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinner_property_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/spinner_border"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/_5sdp"
+            android:spinnerMode="dialog"
+            app:smsp_isSearchable="true"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_hint="Property Type"
+            app:smsp_underlineColor="@color/white"
+            app:smsp_searchHintColor="@color/grey_hint"
+            app:smsp_searchTextColor="@color/black"
+            app:smsp_searchHeaderBackgroundColor="@color/jhongara"
+            app:smsp_searchHeaderText="Select Property Type"
+            app:smsp_hintColor="@color/grey_hint"
+            app:smsp_itemColor="@color/black"
+            app:smsp_itemListColor="@color/black"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#808080"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252" />
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinner_property_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/spinner_border"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/_5sdp"
+            android:spinnerMode="dialog"
+            app:smsp_isSearchable="true"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_hint="Property On"
+            app:smsp_underlineColor="@color/white"
+            app:smsp_searchHintColor="@color/grey_hint"
+            app:smsp_searchTextColor="@color/black"
+            app:smsp_searchHeaderText="Select Property On"
+            app:smsp_searchHeaderBackgroundColor="@color/jhongara"
+            app:smsp_hintColor="@color/grey_hint"
+            app:smsp_itemColor="@color/black"
+            app:smsp_itemListColor="@color/black"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#808080"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252" />
+
+        <RelativeLayout
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/purple_button_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout28"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout28">
+
+            <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#54000000"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="match_parent"
+                layout="@layout/drawer_layout"/>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

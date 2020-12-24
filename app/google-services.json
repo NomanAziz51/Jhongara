@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "800660357542",
+    "firebase_url": "https://al-bari-goc-digitalization.firebaseio.com",
+    "project_id": "al-bari-goc-digitalization",
+    "storage_bucket": "al-bari-goc-digitalization.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800660357542:android:11da6944895ca33aed4f67",
+        "android_client_info": {
+          "package_name": "com.jhongara.realestate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800660357542-7melvium7s3d49fli3rjhcuprhjo1a2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsRnSPvIXsSqvU-zXhT_24TAtNdqdqFho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800660357542-7melvium7s3d49fli3rjhcuprhjo1a2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

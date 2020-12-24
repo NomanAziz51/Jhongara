@@ -1,0 +1,301 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+
+    <string-array name="Cities" >
+       <!-- <item value="" disabled="">Federal Capital</item>-->
+        <item value="Islamabad">Islamabad</item>
+
+        <!--<item value="" disabled="">Punjab Cities</item>-->
+        <item value="Lahore">Lahore</item>
+        <item value="Ahmed Nager Chatha">Ahmed Nager Chatha</item>
+        <item value="Ahmadpur East">Ahmadpur East</item>
+        <item value="Ali Khan Abad">Ali Khan Abad</item>
+        <item value="Alipur">Alipur</item>
+        <item value="Arifwala">Arifwala</item>
+        <item value="Attock">Attock</item>
+        <item value="Bhera">Bhera</item>
+        <item value="Bhalwal">Bhalwal</item>
+        <item value="Bahawalnagar">Bahawalnagar</item>
+        <item value="Bahawalpur">Bahawalpur</item>
+        <item value="Bhakkar">Bhakkar</item>
+        <item value="Burewala">Burewala</item>
+        <item value="Chillianwala">Chillianwala</item>
+        <item value="Chakwal">Chakwal</item>
+        <item value="Chichawatni">Chichawatni</item>
+        <item value="Chiniot">Chiniot</item>
+        <item value="Chishtian">Chishtian</item>
+        <item value="Daska">Daska</item>
+        <item value="Darya Khan">Darya Khan</item>
+        <item value="Dera Ghazi Khan">Dera Ghazi Khan</item>
+        <item value="Dhaular">Dhaular</item>
+        <item value="Dina">Dina</item>
+        <item value="Dinga">Dinga</item>
+        <item value="Dipalpur">Dipalpur</item>
+        <item value="Faisalabad">Faisalabad</item>
+        <item value="Fateh Jhang">Fateh Jang</item>
+        <item value="Ghakhar Mandi">Ghakhar Mandi</item>
+        <item value="Gojra">Gojra</item>
+        <item value="Gujranwala">Gujranwala</item>
+        <item value="Gujrat">Gujrat</item>
+        <item value="Gujar Khan">Gujar Khan</item>
+        <item value="Hafizabad">Hafizabad</item>
+        <item value="Haroonabad">Haroonabad</item>
+        <item value="Hasilpur">Hasilpur</item>
+        <item value="Haveli">Haveli</item>
+        <item value="Lakha">Lakha</item>
+        <item value="Jalalpur">Jalalpur</item>
+        <item value="Jattan">Jattan</item>
+        <item value="Jampur">Jampur</item>
+        <item value="Jaranwala">Jaranwala</item>
+        <item value="Jhang">Jhang</item>
+        <item value="Jhelum">Jhelum</item>
+        <item value="Kalabagh">Kalabagh</item>
+        <item value="Karor Lal Esan">Karor Lal Esan</item>
+        <item value="Kasur">Kasur</item>
+        <item value="Kamalia">Kamalia</item>
+        <item value="Kamoke">Kamoke</item>
+        <item value="Khanewal">Khanewal</item>
+        <item value="Khanpur">Khanpur</item>
+        <item value="Kharian">Kharian</item>
+        <item value="Khushab">Khushab</item>
+        <item value="Kot Adu">Kot Adu</item>
+        <item value="Jauharabad">Jauharabad</item>
+        <item value="Lalamusa">Lalamusa</item>
+        <item value="Layyah">Layyah</item>
+        <item value="Liaquat Pur">Liaquat Pur</item>
+        <item value="Lodhran">Lodhran</item>
+        <item value="Malakwal">Malakwal</item>
+        <item value="Mamoori">Mamoori</item>
+        <item value="Mailsi">Mailsi</item>
+        <item value="Mandi Bahauddin">Mandi Bahauddin</item>
+        <item value="mian Channu">Mian Channu</item>
+        <item value="Mianwali">Mianwali</item>
+        <item value="Multan">Multan</item>
+        <item value="Murree">Murree</item>
+        <item value="Muridke">Muridke</item>
+        <item value="Mianwali Bangla">Mianwali Bangla</item>
+        <item value="Muzaffargarh">Muzaffargarh</item>
+        <item value="Narowal">Narowal</item>
+        <item value="Okara">Okara</item>
+        <item value="Renala Khurd">Renala Khurd</item>
+        <item value="Pakpattan">Pakpattan</item>
+        <item value="Pattoki">Pattoki</item>
+        <item value="Pir Mahal">Pir Mahal</item>
+        <item value="Qaimpur">Qaimpur</item>
+        <item value="Qila Didar Singh">Qila Didar Singh</item>
+        <item value="Rabwah">Rabwah</item>
+        <item value="Raiwind">Raiwind</item>
+        <item value="Rajanpur">Rajanpur</item>
+        <item value="Rahim Yar Khan">Rahim Yar Khan</item>
+        <item value="Rawalpindi">Rawalpindi</item>
+        <item value="Sadiqabad">Sadiqabad</item>
+        <item value="Safdarabad">Safdarabad</item>
+        <item value="Sahiwal">Sahiwal</item>
+        <item value="Sangla Hill">Sangla Hill</item>
+        <item value="Sarai Alamgir">Sarai Alamgir</item>
+        <item value="Sargodha">Sargodha</item>
+        <item value="Shakargarh">Shakargarh</item>
+        <item value="Sheikhupura">Sheikhupura</item>
+        <item value="Sialkot">Sialkot</item>
+        <item value="Sohawa">Sohawa</item>
+        <item value="Soianwala">Soianwala</item>
+        <item value="Siranwali">Siranwali</item>
+        <item value="Talagang">Talagang</item>
+        <item value="Taxila">Taxila</item>
+        <item value="Toba Tek  Singh">Toba Tek Singh</item>
+        <item value="Vehari">Vehari</item>
+        <item value="Wah Cantonment">Wah Cantonment</item>
+        <item value="Wazirabad">Wazirabad</item>
+      <!--  <item value="" disabled="">Sindh Cities</item>-->
+        <item value="Badin">Badin</item>
+        <item value="Bhirkan">Bhirkan</item>
+        <item value="Rajo Khanani">Rajo Khanani</item>
+        <item value="Chak">Chak</item>
+        <item value="Dadu">Dadu</item>
+        <item value="Digri">Digri</item>
+        <item value="Diplo">Diplo</item>
+        <item value="Dokri">Dokri</item>
+        <item value="Ghotki">Ghotki</item>
+        <item value="Haala">Haala</item>
+        <item value="Hyderabad">Hyderabad</item>
+        <item value="Islamkot">Islamkot</item>
+        <item value="Jacobabad">Jacobabad</item>
+        <item value="Jamshoro">Jamshoro</item>
+        <item value="Jungshahi">Jungshahi</item>
+        <item value="Kandhkot">Kandhkot</item>
+        <item value="Kandiaro">Kandiaro</item>
+        <item value="Karachi">Karachi</item>
+        <item value="Kashmore">Kashmore</item>
+        <item value="Keti Bandar">Keti Bandar</item>
+        <item value="Khairpur">Khairpur</item>
+        <item value="Kotri">Kotri</item>
+        <item value="Larkana">Larkana</item>
+        <item value="Matiari">Matiari</item>
+        <item value="Mehar">Mehar</item>
+        <item value="Mirpur Khas">Mirpur Khas</item>
+        <item value="Mithani">Mithani</item>
+        <item value="Mithi">Mithi</item>
+        <item value="Mehrabpur">Mehrabpur</item>
+        <item value="Moro">Moro</item>
+        <item value="Nagarparkar">Nagarparkar</item>
+        <item value="Naudero">Naudero</item>
+        <item value="Naushahro Feroze">Naushahro Feroze</item>
+        <item value="Naushara">Naushara</item>
+        <item value="Nawabshah">Nawabshah</item>
+        <item value="Nazimabad">Nazimabad</item>
+        <item value="Qambar">Qambar</item>
+        <item value="Qasimabad">Qasimabad</item>
+        <item value="Ranipur">Ranipur</item>
+        <item value="Ratodero">Ratodero</item>
+        <item value="Rohri">Rohri</item>
+        <item value="Sakrand">Sakrand</item>
+        <item value="Sanghar">Sanghar</item>
+        <item value="Shahbandar">Shahbandar</item>
+        <item value="Shahdadkot">Shahdadkot</item>
+        <item value="Shahdadpur">Shahdadpur</item>
+        <item value="Shahpur Chakar">Shahpur Chakar</item>
+        <item value="Shikarpaur">Shikarpaur</item>
+        <item value="Sukkur">Sukkur</item>
+        <item value="Tangwani">Tangwani</item>
+        <item value="Tando Adam Khan">Tando Adam Khan</item>
+        <item value="Tando Allahyar">Tando Allahyar</item>
+        <item value="Tando Muhammad Khan">Tando Muhammad Khan</item>
+        <item value="Thatta">Thatta</item>
+        <item value="Umerkot">Umerkot</item>
+        <item value="Warah">Warah</item>
+       <!-- <item value="" disabled="">Khyber Cities</item>-->
+        <item value="Abbottabad">Abbottabad</item>
+        <item value="Adezai">Adezai</item>
+        <item value="Alpuri">Alpuri</item>
+        <item value="Akora Khattak">Akora Khattak</item>
+        <item value="Ayubia">Ayubia</item>
+        <item value="Banda Daud Shah">Banda Daud Shah</item>
+        <item value="Bannu">Bannu</item>
+        <item value="Batkhela">Batkhela</item>
+        <item value="Battagram">Battagram</item>
+        <item value="Birote">Birote</item>
+        <item value="Chakdara">Chakdara</item>
+        <item value="Charsadda">Charsadda</item>
+        <item value="Chitral">Chitral</item>
+        <item value="Daggar">Daggar</item>
+        <item value="Dargai">Dargai</item>
+        <item value="Darya Khan">Darya Khan</item>
+        <item value="dera Ismail Khan">Dera Ismail Khan</item>
+        <item value="Doaba">Doaba</item>
+        <item value="Dir">Dir</item>
+        <item value="Drosh">Drosh</item>
+        <item value="Hangu">Hangu</item>
+        <item value="Haripur">Haripur</item>
+        <item value="Karak">Karak</item>
+        <item value="Kohat">Kohat</item>
+        <item value="Kulachi">Kulachi</item>
+        <item value="Lakki Marwat">Lakki Marwat</item>
+        <item value="Latamber">Latamber</item>
+        <item value="Madyan">Madyan</item>
+        <item value="Mansehra">Mansehra</item>
+        <item value="Mardan">Mardan</item>
+        <item value="Mastuj">Mastuj</item>
+        <item value="Mingora">Mingora</item>
+        <item value="Nowshera">Nowshera</item>
+        <item value="Paharpur">Paharpur</item>
+        <item value="Pabbi">Pabbi</item>
+        <item value="Peshawar">Peshawar</item>
+        <item value="Saidu Sharif">Saidu Sharif</item>
+        <item value="Shorkot">Shorkot</item>
+        <item value="Shewa Adda">Shewa Adda</item>
+        <item value="Swabi">Swabi</item>
+        <item value="Swat">Swat</item>
+        <item value="Tangi">Tangi</item>
+        <item value="Tank">Tank</item>
+        <item value="Thall">Thall</item>
+        <item value="Timergara">Timergara</item>
+        <item value="Tordher">Tordher</item>
+     <!-- <item value="" disabled="">Balochistan Cities</item>-->
+        <item value="Awaran">Awaran</item>
+        <item value="Barkhan">Barkhan</item>
+        <item value="Chagai">Chagai</item>
+        <item value="Dera Bugti">Dera Bugti</item>
+        <item value="Gwadar">Gwadar</item>
+        <item value="Harnai">Harnai</item>
+        <item value="Jafarabad">Jafarabad</item>
+        <item value="Jhal Magsi">Jhal Magsi</item>
+        <item value="Kacchi">Kacchi</item>
+        <item value="Kalat">Kalat</item>
+        <item value="Kech">Kech</item>
+        <item value="Kharan">Kharan</item>
+        <item value="Khuzdar">Khuzdar</item>
+        <item value="Killa Abdullah">Killa Abdullah</item>
+        <item value="Killa Saifullah">Killa Saifullah</item>
+        <item value="Kohlu">Kohlu</item>
+        <item value="Lasbela">Lasbela</item>
+        <item value="Lehri">Lehri</item>
+        <item value="Loralai">Loralai</item>
+        <item value="Mastung">Mastung</item>
+        <item value="Musakhel">Musakhel</item>
+        <item value="Nasirabad">Nasirabad</item>
+        <item value="Nushki">Nushki</item>
+        <item value="Panjgur">Panjgur</item>
+        <item value="Pishin valley">Pishin Valley</item>
+        <item value="Quetta">Quetta</item>
+        <item value="Sherani">Sherani</item>
+        <item value="Sibi">Sibi</item>
+        <item value="Sohbatpur">Sohbatpur</item>
+        <item value="Washuk">Washuk</item>
+        <item value="Zhob">Zhob</item>
+        <item value="Ziarat">Ziarat</item>
+    </string-array>
+
+    <string-array name="property_type">
+     <!--   <item>Select City</item>-->
+   <!-- <item value="" disabled="">House Type</item>-->
+    <item value="Homes">Homes</item>
+    <item value="Flat">Flat</item>
+    <item value="Upper Portion">Upper Portion</item>
+    <item value="Lower Portion">Lower Portion</item>
+    <item value="Farm House">Farm House</item>
+    <item value="Room">Room</item>
+    <item value="Penthouse">Penthouse</item>
+
+   <!-- <item value="" disabled="">==========</item>-->
+    <item value="High Rise Projects">High Rise Projects</item>
+   <!-- <item value="" disabled="">==========</item>-->
+
+    <item value="" disabled="">Plots Type</item>
+    <item value="Residential Plot">Residential Plot</item>
+    <item value="Commercial Plot">Commercial Plot</item>
+    <item value="Agricultural Land">Agricultural Land</item>
+    <item value="Industrial Land">Industrial Land</item>
+
+   <!-- <item value="" disabled="">Commercial Type</item>-->
+
+    <item value="Office">Office</item>
+    <item value="Shop">Shop</item>
+    <item value="Warehouse">Warehouse</item>
+    <item value="Factory">Factory</item>
+    <item value="Building">Building</item>
+    </string-array>
+
+
+    <string-array name="property_on">
+
+        <item value="Buy">Sale</item>
+        <item value="Rent">Rent</item>
+        <item value="Wanted">Wanted</item>
+    </string-array>
+
+ <string-array name="sign_in_option">
+
+  <item value="Sign in as Client">Sign in as a client</item>
+  <item value="Sign in as Agent">Sign in as an agent</item>
+ </string-array>
+</resources>

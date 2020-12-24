@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="10"
+        tools:context=".Fragment.AdUploadFragment">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                app:tint="@color/jhongara" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:layout_toRightOf="@+id/menu"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Edit AD"
+                android:textColor="@color/jhongara"
+
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/ic_launcher_background" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ed_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Title* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                            android:id="@+id/ed_property_on"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/form_edittext_border"
+                            android:layout_marginTop="15dp"
+                            android:padding="@dimen/_5sdp"
+                            android:spinnerMode="dialog"
+                            app:smsp_isSearchable="true"
+                            app:smsp_enableFloatingLabel="false"
+                            app:smsp_enableErrorLabel="false"
+                            app:smsp_hint="Property On"
+                            app:smsp_underlineColor="@color/white"
+                            app:smsp_searchHintColor="@color/grey_hint"
+                            app:smsp_searchTextColor="@color/black"
+                            app:smsp_searchHeaderText="Select Property On"
+                            app:smsp_searchHeaderBackgroundColor="@color/jhongara"
+                            app:smsp_hintColor="@color/grey_hint"
+                            app:smsp_itemColor="@color/black"
+                            app:smsp_itemListColor="@color/black"
+                            app:smsp_itemListHintBackgroundColor="#808080"
+                            app:smsp_itemListHintColor="#808080"
+                            app:smsp_multilineError="false"
+                            app:smsp_selectedItemListColor="#FF5252" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Property On* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ed_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Price* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ed_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Address* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.33">
+
+                        <EditText
+                            android:id="@+id/ed_bed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="0dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp"
+                            android:maxLength="3"
+                            android:nextFocusRight="@id/ed_bath" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Bed* "
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.33">
+
+                        <EditText
+                            android:id="@+id/ed_bath"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:maxLength="3"
+                            android:gravity="start"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp"
+                            android:nextFocusRight="@id/ed_stories"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Bath* "
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.33">
+
+                        <EditText
+                            android:id="@+id/ed_stories"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="0dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:maxLength="3"
+                            android:gravity="start"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp"
+                            android:nextFocusDown="@id/ed_area"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Stories* "
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ed_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Area* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                            android:id="@+id/ed_cities"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/form_edittext_border"
+                            android:layout_marginTop="15dp"
+                            android:padding="@dimen/_5sdp"
+                            android:spinnerMode="dialog"
+                            app:smsp_isSearchable="true"
+
+                            app:smsp_enableFloatingLabel="false"
+                            app:smsp_enableErrorLabel="false"
+                            app:smsp_hint="Select City"
+                            app:smsp_hintSize="@dimen/_15sdp"
+
+                            app:smsp_underlineColor="@color/white"
+                            app:smsp_searchTextColor="@color/black"
+                            app:smsp_searchHintColor="@color/grey_hint"
+                            app:smsp_searchHeaderText="Select City"
+                            app:smsp_searchHeaderBackgroundColor="@color/jhongara"
+                            app:smsp_hintColor="@color/grey_hint"
+                            app:smsp_itemColor="@color/black"
+                            app:smsp_itemListColor="@color/black"
+                            app:smsp_itemListHintBackgroundColor="#808080"
+                            app:smsp_itemListHintColor="#808080"
+                            app:smsp_multilineError="false"
+                            app:smsp_selectedItemListColor="#FF5252"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" City* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ed_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Description* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                            android:id="@+id/ed_property_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/form_edittext_border"
+                            android:layout_marginTop="15dp"
+                            android:padding="@dimen/_5sdp"
+                            android:spinnerMode="dialog"
+                            app:smsp_isSearchable="true"
+                            app:smsp_enableFloatingLabel="false"
+                            app:smsp_enableErrorLabel="false"
+                            app:smsp_hint="Property Type"
+                            app:smsp_underlineColor="@color/white"
+                            app:smsp_hintSize="@dimen/_15sdp"
+                            app:smsp_searchHintColor="@color/grey_hint"
+                            app:smsp_searchTextColor="@color/black"
+                            app:smsp_searchHeaderBackgroundColor="@color/jhongara"
+                            app:smsp_searchHeaderText="Select Property Type"
+                            app:smsp_hintColor="@color/grey_hint"
+                            app:smsp_itemColor="@color/black"
+                            app:smsp_itemListColor="@color/black"
+                            app:smsp_itemListHintBackgroundColor="#808080"
+                            app:smsp_itemListHintColor="#808080"
+                            app:smsp_multilineError="false"
+                            app:smsp_selectedItemListColor="#FF5252" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Property Type* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ed_Amenities"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Amenities* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ed_near_by"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Near By* "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ed_youtube_embed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/form_edittext_border"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:text=" Youtube Embeded Code "
+
+                            android:textColor="@color/jhongara"
+                            android:textSize="@dimen/_13sdp" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="10"
+
+                        android:gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="3.333"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/image1"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:background="@drawable/form_edittext_border"
+                                android:gravity="center"
+                                android:padding="@dimen/_7sdp"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:background="@color/white"
+                                android:gravity="top"
+                                android:text=" Image 1* "
+                                android:textColor="@color/jhongara"
+                                android:textSize="@dimen/_10sdp" />
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="3.33"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/image2"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:background="@drawable/form_edittext_border"
+                                android:gravity="center"
+                                android:padding="@dimen/_7sdp"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+
+                                android:background="@color/white"
+                                android:gravity="top"
+                                android:text=" image 2* "
+                                android:textColor="@color/jhongara"
+                                android:textSize="@dimen/_10sdp" />
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="match_parent" />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="3.33"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/image3"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:background="@drawable/form_edittext_border"
+                                android:gravity="center"
+                                android:padding="@dimen/_7sdp"
+                                android:scaleType="fitXY"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:background="@color/white"
+                                android:gravity="top"
+                                android:text=" image 3* "
+                                android:textColor="@color/jhongara"
+                                android:textSize="@dimen/_10sdp" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="10"
+
+                        android:gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="3.333"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/image4"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:background="@drawable/form_edittext_border"
+                                android:gravity="center"
+                                android:padding="@dimen/_7sdp"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:background="@color/white"
+                                android:gravity="top"
+                                android:text=" Image 4* "
+                                android:textColor="@color/jhongara"
+                                android:textSize="@dimen/_10sdp" />
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="3.33"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/image5"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:background="@drawable/form_edittext_border"
+                                android:gravity="center"
+                                android:padding="@dimen/_7sdp"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+
+                                android:background="@color/white"
+                                android:gravity="top"
+                                android:text=" Image 5* "
+                                android:textColor="@color/jhongara"
+                                android:textSize="@dimen/_10sdp" />
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="match_parent" />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="3.33"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/image6"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:background="@drawable/form_edittext_border"
+                                android:gravity="center"
+                                android:padding="@dimen/_7sdp"
+                                android:scaleType="fitXY"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:background="@color/white"
+                                android:gravity="top"
+                                android:text=" image 6* "
+                                android:textColor="@color/jhongara"
+                                android:textSize="@dimen/_10sdp" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="10"
+
+                        android:gravity="center">
+
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="3.33"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/floorplan"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:background="@drawable/form_edittext_border"
+                                android:gravity="center"
+                                android:padding="@dimen/_7sdp"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="155dp"
+
+                                android:background="@color/white"
+                                android:gravity="top"
+                                android:text=" Floor Plan "
+                                android:textColor="@color/jhongara"
+                                android:textSize="@dimen/_10sdp" />
+                        </FrameLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_sumit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sumit"
+                    android:layout_gravity="right"
+                    android:background="@drawable/purple_button_background"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <com.propertyeager.realestate.Views.ProgressLoader
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:progressDrawable="@drawable/circularprogress"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
